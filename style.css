@@ -1,0 +1,230 @@
+@font-face {
+    font-family: googli;
+    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+}
+* {
+    /* font-family: googli; */
+}
+.background-color-red {
+    background-color: #F0C102 !important;
+    color: #fff;
+}
+.text-light {
+    color: #fff !important;
+}
+#search-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none !important;
+}
+#search-input:focus {
+    outline: none !important;
+}
+#search-btn {
+    background-color: #A32241 !important;
+    color: #fff;
+    border: none;
+    width: 5rem;
+}
+body {
+    background-color: #5B1F00;
+}
+.card {
+    background-color: #C28E00;
+    margin: 10px 0px;
+}
+.card-img-top {
+    margin-top: 10px 0px;
+    border-radius: 4px;
+}
+.logo {
+    height: 70px !important;
+}
+footer {
+    background-color: #2e0f00;
+    color: #fff;
+}
+.flexible {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.website {
+    /* background-color: #A32241; */
+    padding: 20px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+.website a {
+    color: #fff;
+    text-decoration: none;
+}
+.small-footer {
+    height: 35px;
+    background-color: rgb(22, 0, 0);
+    display: flex;
+}
+.small-footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.small-footer .container a {
+    margin: 0px 10px;
+    color: #fff;
+    text-decoration: none;
+}
+.card img, .card-body .card-title {
+    cursor: pointer;
+}
+.help {
+    cursor: help;
+}
+.ancor {
+    text-decoration: none;
+    color: #fff;
+}
+#duration {
+    text-align: end;
+    margin-bottom: 0;
+}
+.float-start {
+    float: left !important;
+}
+.custom-width {
+    overflow: hidden;
+}
+
+.size-mezarment {
+    font-size: 1.1rem;
+    color: #5B1F00;
+}
+.eita {
+    margin-left: 25px;
+}
+.icons {
+    margin-right: 10px;
+}
+.border {
+    border: 1px solid black !important;
+    border-radius: 8px;
+}
+.no-border {
+    border: none !important;
+    outline: none !important;
+}
+.image-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(image/certificate.png);
+    background-size: 1500px;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+}
+.image-area i {
+    font-size: 120px !important;
+    padding: 286px 0px;
+    color: #2e2e2e;
+    transition: 0.01s;
+}
+.image-area i:hover {
+    color: #454545
+}
+.title-area {
+    color: #ffffff;
+    font-size: 29px;
+}
+.white-line {
+    border: 1px solid white;
+}
+.extra-area {
+    color: white;
+    margin-bottom: 7px;
+}
+.extra-area .row .col-md-1 a i {
+    color: white;
+    font-size: 23px;
+}
+.extra-area .row .col-md-1 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+}
+.extra-area .row div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Discription-area {
+    background-color: rgba(0.5, 0.5, 0.5, 0.2);
+    border-radius: 14px;
+    color: white;
+    padding: 10px;
+}
+.Discription-area a {
+    color: white;
+    text-decoration: none;
+}
+.Comment-area {
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+.full-div {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0.5, 0.5, 0.5, 0.2); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-area {
+    width: 88%;
+    color: white;
+}
+.Comment-area h2 {
+    color: white;
+}
+.comment-box {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    background-color: rgba(0.5, 0.5, 0.5, 0.2);
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+.comment-box-1 img {
+    width: 60px;
+    border-radius: 50%;
+}
+.comment-box-icons {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 500px;
+}
+.comment-box-icons i,p {
+    margin: 7px;
+}
+#like {
+    transition: 0.2s;
+}
+#like:hover, #share:hover, #comment:hover {
+    color: rgb(96, 96, 254);
+}
+#dislike:hover, #favorite:hover {
+    color: rgb(255, 48, 48);
+}
+#download:hover, #network:hover, #clips:hover, #more:hover {
+    color: wheat;
+    /* background-color: red; */
+    /* padding: 5px; */
+}
