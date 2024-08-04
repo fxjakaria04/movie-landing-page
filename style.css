@@ -121,9 +121,15 @@ footer {
     align-items: center;
     justify-content: center;
     background: url(image/certificate.png);
-    background-size: 1500px;
+    /* background: url(https://g2.img-dpreview.com/DB98322612CD4259830FEC9067CB8E89.jpg); */
+    background-size: contain;
+    background-position: center;
+    width: 1919px;
+    height: 592px;
     background-repeat: no-repeat;
     margin-bottom: 0;
+    background-color: rgb(22, 22, 22);
+    border-radius: 5px;
 }
 .image-area i {
     font-size: 120px !important;
@@ -227,4 +233,26 @@ footer {
     color: wheat;
     /* background-color: red; */
     /* padding: 5px; */
+}
+.sections {
+    width: 20%;
+    border: 1px solid white;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+}
+.mob-extra-area {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mob-extra-area .content-area {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }

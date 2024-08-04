@@ -1,5 +1,29 @@
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue !important;
+    .comment-box-icons {
+        width: 100%;
+    }
+    .website {
+        padding: 0px;
+    }
+    .title-area {
+        font-size: 18px;
+    }
+    .image-area {
+        height: 190px;
+    }
+    .dna {
+        display: none;
+    }
+    .extra-area {
+        display: none;
+    }
+    .mob-extra-area .content-area .sections {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column !important;
+    }
+    .logo {
+        height: 55px !important;
     }
   }
