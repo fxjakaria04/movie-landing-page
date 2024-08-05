@@ -236,7 +236,7 @@ footer {
 }
 .sections {
     width: 20%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -255,4 +255,7 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: row;
+}
+.mob-extra-area {
+    display: none   ;
 }

@@ -149,16 +149,9 @@
        </div>
        <hr class="white-line">
        <div class="Comment-area">
-        <h2>Top Comments</h2>
+        <h2 id="comment">Top Comments</h2>
         <div class="full-div">
             <div class="content-area" id="content-area">
-                
-                
-                
-                
-                
-                
-                
                 
                 
                 
@@ -239,8 +232,8 @@
                         <img src="${imgsrc}" alt="">
                     </div>
                     <div class="comment-box-2">
-                        <p><b>@<span>${element.email}</span></b><span> ${Math.round(Math.random()*11)} Month Ago</span></p>
-                        <p>${element.body}</p>
+                        <p id="user"><b>@<span>${element.email}</span></b><span> ${Math.round(Math.random()*11)} Month Ago</span></p>
+                        <p id="comment-body">${element.body}</p>
                         <div class="comment-box-icons">
                             <i class="fa-solid fa-thumbs-up"></i>
                             <i class="fa-solid fa-thumbs-down"></i>

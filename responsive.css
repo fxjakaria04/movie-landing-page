@@ -11,6 +11,9 @@
     .image-area {
         height: 190px;
     }
+    .image-area a i {
+        font-size: 40px !important;
+    }
     .dna {
         display: none;
     }
@@ -22,8 +25,27 @@
         align-items: center;
         justify-content: center;
         flex-direction: column !important;
+        color: white;
     }
     .logo {
         height: 55px !important;
+    }
+    .sections a {
+        color: white;
+    }
+    .Discription-area {
+        font-size: 0.7rem;
+    }
+    .mob-extra-area {
+        display: block;
+    }
+    #comment {
+        font-size: 1.2rem;
+    }
+    #user {
+        font-size: 0.9rem;
+    }
+    #comment-body {
+        font-size: 0.7rem;
     }
   }
