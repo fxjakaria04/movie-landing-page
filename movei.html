@@ -12,22 +12,22 @@
 </head>
 <body>
     <div class="content">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary background-color-red">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary background-color-red navbar-dark">
             <div class="container text-light">
                 <a href="index.html"><img src="image/logo.png" alt="" class="navbar-brand logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <button class="navbar-toggler text-light text white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-light text-white"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <div class="collapse navbar-collapse text-white" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll text-light" style="--bs-scroll-height: 100px; color: white;">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="https://nossairt.net/4/7686491">Actors</a>
+                    <a class="nav-link text-light" href="https://nossairt.net/4/7686491">Actors</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Category
                     </a>
                     <ul class="dropdown-menu">
@@ -43,11 +43,11 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link help">Help</a>
+                    <a class="nav-link help text-light">Help</a>
                   </li>
                 </ul>
                 <form class="d-flex border" role="search">
-                  <input class="form-control me-2 no-border" type="search" placeholder="Search" aria-label="Search" id="search-input">
+                  <input class="form-control me-2 no-border text-light" type="search" placeholder="Search" aria-label="Search" id="search-input">
                   <a href="https://nossairt.net/4/7686491"><button class="btn btn-outline-success" type="submit" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button></a>
                   
                 </form>
@@ -74,7 +74,7 @@
         <div class="extra-area">
             <div class="row">
                 <div class="col-md-1 col-sm-1">
-                  <a><i onclick="changeColor(2)" class="fa-solid fa-thumbs-up" id="like"></i>15.2B</a>
+                  <a><i onclick="changeColor(2)" class="fa-solid fa-thumbs-up blue" id="like"></i>15.2B</a>
                 </div>
                 <div class="col-md-1 col-sm-1">
                    <a><i onclick="changeColor(1)" class="fa-solid fa-thumbs-down" id="dislike"></i>150K</a>
@@ -109,7 +109,7 @@
           <div class="content-area">
             <div class="section-1 sections">
               <a>
-                <i onclick="changeColor(2)" class="fa-solid fa-thumbs-up" id="like"></i>
+                <i onclick="changeColor(2)" class="fa-solid fa-thumbs-up blue" id="like"></i>
                 <a>15.2B</a>
                 </a>
             </div>
@@ -235,7 +235,7 @@
                         <p id="user"><b>@<span>${element.email}</span></b><span> ${Math.round(Math.random()*11)} Month Ago</span></p>
                         <p id="comment-body">${element.body}</p>
                         <div class="comment-box-icons">
-                            <i class="fa-solid fa-thumbs-up"></i>
+                            <i class="fa-solid fa-thumbs-up blue" id="comment-like-btn"></i>
                             <i class="fa-solid fa-thumbs-down"></i>
                             <p>Reply</p>
                         </div>
@@ -245,37 +245,54 @@
             }
         }
         )
-        // document.getElementById("like").addEventListener("click", function(){
+        document.getElementById("like").addEventListener("click", function(){
 
-        //   let icon = document.getElementById("like");
-        //   let currentColor = icon.style.color;
-        //   if(currentColor === "rgb(0, 0, 255)"){
-        //     icon.style.color = "rgb(255, 255, 255)"
-        //   }else if (currentColor === "rgb(255, 255, 255)"){
-        //     icon.style.color = "rgb(0, 0, 255)";
-        //   }else {
-        //     icon.style.color = "rgb(0, 0, 255)"
-        //   }
-          
-          
-        // })
-        // document.getElementById("dislike").addEventListener("click", function(){
-        //   let icon = document.getElementById("dislike");
-        //   let currentColor = icon.style.color;
-        //   if (currentColor === "rgb(255, 255, 255)"){
-        //     icon.style.color = "rgb(255, 0, 0)"
-        //   }else if(currentColor === "rgb(255, 0, 0)"){
-        //     icon.style.color = "rgb(255, 255, 255)"
-        //   }else {
-        //     icon.style.color = "rgb(255, 0, 0)"
-        //   }
-        // })
-        function changeColor (valu){
-          console.log(valu);
-          if(valu == 2){
-            console.log(this)
+          let icon = document.getElementById("like");
+          let currentColor = icon.style.color;
+
+          let dislikeBTN = document.getElementById("dislike");
+
+          if(currentColor === "rgb(0, 0, 255)"){
+            icon.style.color = "rgb(255, 255, 255)"
+          }else if (currentColor === "rgb(255, 255, 255)"){
+            icon.style.color = "rgb(0, 0, 255)";
+            dislikeBTN.style.color = "rgb(255, 255, 255)"
+          }else {
+            icon.style.color = "rgb(0, 0, 255)"
+            dislikeBTN.style.color = "rgb(255, 255, 255)"
           }
-        }
+          
+          
+        })
+        document.getElementById("dislike").addEventListener("click", function(){
+          let icon = document.getElementById("dislike");
+          let currentColor = icon.style.color;
+          let likeBTN = document.getElementById("like");
+
+
+          if (currentColor === "rgb(255, 255, 255)"){
+            icon.style.color = "rgb(255, 0, 0)"
+            likeBTN.style.color = "rgb(255, 255, 255)"
+          }else if(currentColor === "rgb(255, 0, 0)"){
+            icon.style.color = "rgb(255, 255, 255)"
+          }else {
+            icon.style.color = "rgb(255, 0, 0)"
+            likeBTN.style.color = "rgb(255, 255, 255)"
+          }
+        })
+        document.getElementById("comment-like-btn").addEventListener("click", function(){
+          let likeBtn = document.getElementById("comment-like-btn");
+          let currentColor = likeBtn.style.color;
+
+          if(currentColor === "rgb(255, 255, 255)"){
+            likeBtn.style.color = "rgb(0, 0, 255)"
+          }else if (currentColor === "rgb(0, 0, 255)"){
+            likeBtn.style.color = "rgb(255, 255, 255)"
+          }
+        })
+        const fake = document.getElementsByClassName("blue");
+        console.log(fake);
+        console.log("fake");
     </script>
     <!-- <script>
        const mainSection = document.getElementById("main-container");
