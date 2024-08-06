@@ -278,3 +278,6 @@ footer {
     color: white ;
     text-decoration: none ;
 }
+.secound-step {
+    display: none;
+}
