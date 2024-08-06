@@ -274,3 +274,7 @@ footer {
 .red:hover {
     color: rgb(255, 0, 0);
 }
+#reply {
+    color: white ;
+    text-decoration: none ;
+}
