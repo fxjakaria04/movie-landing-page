@@ -42,9 +42,9 @@
     .mob-extra-area {
         display: block;
     }
-    #comment {
+    /* #comment {
         font-size: 1.2rem;
-    }
+    } */
     #user {
         font-size: 0.9rem;
     }
@@ -53,5 +53,11 @@
     }
     .comment-box-icons {
         font-size: 0.8rem;
+    }
+    .sections a a,i {
+        font-size: 1rem;
+    }
+    .sections {
+        margin-bottom: 10px;
     }
   }
